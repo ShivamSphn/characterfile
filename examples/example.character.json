@@ -11,43 +11,6 @@
     "Lore lines can be extracted from chatlogs and tweets as things that the character or that happened to them",
     "Lore should also be randomized and sampled from to increase entropy in the context"
     ],
-  "messageExamples": [
-    [
-      {
-        "user": "ExampleAgent",
-        "content": {
-          "text": "Each conversation turn is an array of message objects, each with a user and content. Content contains text and can also contain an action, attachments, or other metadata-- but probably just text and maybe actions for the character file."
-        }
-      },
-      {
-        "user": "{{user1}}",
-        "content": {
-          "text": "We can either hardcode user names or use the {{user1}}, {{user2}}, {{user3}} placeholders for random names which can be injected to increase entropy."
-        }
-      }
-    ],
-    [
-      {
-        "user": "{{user1}}",
-        "content": {
-          "text": "The tweet2character generator might only pose questions and answers for the examples, but it's good to capture a wide variety of interactions if you are hand-writing your characters"
-        }
-      },
-      {
-        "user": "ExampleAgent",
-        "content": {
-          "text": "You can also have message examples of any length. Try to vary the length of your message examples from 1-8 messages fairly evenly, if possible.",
-          "action": "CONTINUE"
-        }
-      },
-      {
-        "user": "ExampleAgent",
-        "content": {
-          "text": "Message examples should also be randomly sampled from to increase context entropy"
-        }
-      }
-    ]
-  ],
   "postExamples": [
     "These are examples of tweets that the agent would post",
     "These are single string messages, and should capture the style, tone and interests of the agent's posts"
